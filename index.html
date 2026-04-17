@@ -3,173 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAHII FOUNDATION</title>
+    <title>SAHII Foundation | Changing Lives with Dignity</title>
     <link rel="icon" href="logoFevicon.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-
 <body>
 
-
-<header>
-    <nav class="nav">
-        <div class="logo">
-            <img src="logo.png" alt="logo">
-        </div>
-        <div class="hamburger">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#donate">Donate</a></li>
-        </ul>
-    </nav>
-</header>
-<hr>
-<div class="black_marquee">
-    <marquee behavior="" direction="">Your small donation can change million of lives!</marquee>
-</div>
-
-<section class="hero" id="home">
-    <h2>Your Donation Feeds <br> a Family Today</h2>
-    <p>Direct support for food, shelter and education <br>
-    Transparent and life-changing donations.</p>
-    <br><br>
-
-    <div class="hero-buttons">
-        <button class="donatebtn">Donate Now</button>
-        <button class="viewImpact">View Impact</button>
-    </div>
-</section>
-
-
-<!-- ================= COMMITMENTS ================= -->
-<section class="commit">
-    <h1>Our Commitments</h1>
-    <div class="cards">
-        <div class="c">
-            <i class="fa-solid fa-hand-holding-heart"></i>
-            Care
-            <p></p>
-        </div>
-
-        <div class="c">
-            <i class="fa-solid fa-seedling"></i>
-            Growth
-        </div>
-
-        <div class="c">
-            <i class="fa-solid fa-hand-holding-dollar"></i>
-            Change
-        </div>
-    </div>
-</section>
-
-<!-- ================= PROJECTS ================= -->
-<section class="activeProjects" id="projects">
-    <h2>Active Projects</h2>
-
-    <div class="p1">
-        <img src="https://img.freepik.com/premium-vector/hand-places-heart-box-labeled-donation_255494-1438.jpg" alt="">
-        <p>Helping families with food, shelter and education support.</p>
-
-        <div class="progressbar"></div>
-    </div>
-</section>
-
-<!-- ================= GET INVOLVED ================= -->
-<section class="get" id="donate">
-    <h1>Get Involved</h1>
-    <div class="paymentMethods">
-        <div class="method">
-            <i class="fa-brands fa-google-pay"></i>
-            GPay
-        </div>
-        <div class="method">
-            <i class="fa-brands fa-paypal"></i>
-            PayPal
-        </div>
-        <div class="method">
-            <i class="fa-solid fa-building-columns"></i>
-            Bank
-        </div>
-        <div class="method">
-            <i class="fa-solid fa-mobile-screen"></i>
-            JazzCash <br>
-            Account Holder Name: Hallar
-            Number:03000020100
-        </div>
-
-    </div>
-</section>
-
-<!-- ================= ABOUT ================= -->
-<section class="about" id="about">
-    <h1>About Us</h1>
-
-    <div class="about-container">
-
-        <div class="about-text">
-            <h2>SAHII Foundation</h2>
-            <p>We help people in need through food, education and health support.</p>
-            <p>Our mission is to create real change in society.</p>
-
-            <button class="about-btn">Learn More</button>
-        </div>
-
-        <div class="about-img">
-            <img src="https://img.freepik.com/premium-photo/volunteer-helping-poor-people-with-donation-box_23-2148768845.jpg" alt="">
-        </div>
-
-    </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-    <div class="footer-container">
-
-        <div class="footer-box">
-            <h2>SAHII Foundation</h2>
-            <p>Helping people through donations and support.</p>
-        </div>
-
-        <div class="footer-box">
-            <h3>Donate</h3>
-            <p>Bank Transfer</p>
-            <p>JazzCash</p>
-            <p>PayPal</p>
-        </div>
-
-        <div class="footer-box">
-            <h3>Contact</h3>
-            <p>sahii.foundation@gmail.com</p>
-            <p>+92 300 1234567</p>
-        </div>
-
-        <div class="footer-box">
-            <h3>Social</h3>
-
-            <div class="socials">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <img src="logo.png" alt="SAHII Foundation">
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
             </div>
 
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#commit">Commitments</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+            <button class="donate-nav-btn">Donate Now</button>
+        </nav>
+    </header>
+
+    <!-- MARQUEE -->
+    <div class="black_marquee">
+        <marquee>❤️ Your small donation can change millions of lives • 100% Transparent • Every Rupee Matters</marquee>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Your Kindness,<br><span class="highlight">Their Future</span></h1>
+            <p>Direct support for food, shelter, and education.<br>Transparent donations that create real change.</p>
+            
+            <div class="hero-buttons">
+                <button class="primary-btn" onclick="document.getElementById('donate').scrollIntoView({behavior:'smooth'})">
+                    <i class="fas fa-heart"></i> Donate Now
+                </button>
+                <button class="secondary-btn" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+                    View Impact
+                </button>
+            </div>
         </div>
+    </section>
 
-    </div>
+    <!-- COMMITMENTS -->
+    <section class="commit" id="commit">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our Commitments</h2>
+            <p>We don't just donate — we build dignity and hope</p>
+        </div>
+        
+        <div class="cards">
+            <div class="c" data-aos="fade-up" data-aos-delay="100">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+                <h3>Care</h3>
+                <p>Immediate food and medical support</p>
+            </div>
+            <div class="c" data-aos="fade-up" data-aos-delay="200">
+                <i class="fa-solid fa-seedling"></i>
+                <h3>Growth</h3>
+                <p>Education and skill development</p>
+            </div>
+            <div class="c" data-aos="fade-up" data-aos-delay="300">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <h3>Change</h3>
+                <p>Sustainable community development</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="footer-bottom">
-        © 2026 SAHII Foundation
-    </div>
-</footer>
+    <!-- ACTIVE PROJECTS -->
+    <section class="activeProjects" id="projects">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Active Projects</h2>
+            <p>Together we're making a real difference right now</p>
+        </div>
+        
+        <div class="project-card" data-aos="fade-up">
+            <img src="" alt="Donation">
+            <div class="project-info">
+                <h3>Emergency Food, Shelter & Education</h3>
+                <p>Helping 450+ families across Sindh with monthly rations, safe housing, and children's education.</p>
+                
+                <div class="progressbar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p><strong>10% Funded</strong> — ₹5,000 raised of ₹50,000</p>
+                
+                <button class="project-donate-btn">Donate to This Project</button>
+            </div>
+        </div>
+    </section>
 
-<!-- JS -->
-<script src="script.js"></script>
+    <!-- DONATE SECTION -->
+    <section class="get" id="donate">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Get Involved • Donate Now</h2>
+            <p>Choose your convenient way to support</p>
+        </div>
+        
+        <div class="paymentMethods">
+            <div class="method" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fa-solid fa-mobile-screen"></i><br>NayaPay<br>
+                <small>Hallar • 03133462917</small>
+            </div>
+            <div class="method" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fa-solid fa-mobile-screen"></i><br>EasyPaisa<br>
+                <small>Hallar • 03133462917</small>
+            </div>
+            <div class="method" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fa-solid fa-building-columns"></i><br>Bank Transfer<br>
+                <small>Hallar • 03133462917</small>
+            </div>
+            <div class="method jazzcash" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fa-solid fa-mobile-screen"></i><br>JazzCash<br>
+                <small>Hallar • 03133462917</small>
+            </div>
+        </div>
+    </section>
 
+    <!-- ABOUT US -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-text" data-aos="fade-left">
+                <h2>About SAHII Foundation</h2>
+                <p>We are a passionate non-profit organization based in Khairpur, Sindh, dedicated to uplifting underprivileged communities through food security, education, and healthcare support.</p>
+                <p>Our mission is simple yet powerful: <strong>Compassion in action creates lasting change.</strong></p>
+                <button class="about-btn">Learn More About Us →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h2>SAHII Foundation</h2>
+                <p>Bringing hope and dignity to those who need it most.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>sahiifoundation49@gmail.com</p>
+                <p>+92 3263097096</p>
+                <p>+92 3111837735</p>
+                <p>+92 3133462917</p>
+                <p>Khairpur, Sindh, Pakistan</p>
+            </div>
+            <div class="footer-box">
+                <h3>Follow Us</h3>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/p/DXMSdHtjafH/?igsh=MWdjZDZldng2NXl3OQ%3D%3D"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 SAHII Foundation • All Rights Reserved
+        </div>
+    </footer>
+
+    <!-- Floating Donate Button -->
+    <a href="#donate" class="floating-donate">
+        <i class="fas fa-heart"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
